@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <!-- GOOGLE FONTS TAGS --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
+    <!-- AJAX TAG -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Tickets Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="naw-bar">
+            <div class="naw-list">
+                <ul>
+                    <li>Menu</li>
+                    <li>Available Tickets</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contents">
+            <ul class="tab">
+                <li id="tab1">Plane</li>
+                <li id="tab2">Bus</li>
+                <li id="tab3">Ship</li>
+            </ul>
+
+            <div class="tab-content">
+                <label for="from-plane">From:</label>
+                <select name="from-plane">
+                    <option>Vienna</option>
+                    <option>Prag</option>
+                    <option selected="selected">İstanbul</option>
+                    <option>London</option>
+                    <option>Kiev</option>
+                </select>
+
+                <label for="to-plane">To:</label>
+                <select name="to-plane">
+                    <option selected="selected">Vienna</option>
+                    <option>Prag</option>
+                    <option>İstanbul</option>
+                    <option>London</option>
+                    <option>Kiev</option>
+                </select>
+
+                <label for="depart-plane">Depart:</label>
+                <input type="date" name="depart-plane" class="date">
+
+                <label for="return-plane">Return:</label>
+                <input type="date" name="return-plane" class="date">
+
+                <label for="class-plane">Cabin Class:</label>
+                <select name="class-plane">
+                    <option selected="selected">Economy</option>
+                    <option>Buisness Class</option>
+                    <option>First Class</option>
+                </select>
+
+                <label>How Many Tickets:</label>
+                <div class="btns">
+                    <button class="btn" id="decrease-plane">-</button>
+                    <h2 id="plane-tickets">1</h2>
+                    <button class="btn" id="increase-plane">+</button>
+                    <div id="plane-price" class="prices"></div>
+                </div>
+
+                <button class="complete">Complete</button>
+            </div>
+
+            <div class="tab-content">
+                <label for="from-bus">From:</label>
+                <select name="from-bus">
+                    <option>Vienna</option>
+                    <option>Prag</option>
+                    <option selected="selected">İstanbul</option>
+                    <option>London</option>
+                    <option>Kiev</option>
+                </select>
+
+                <label for="to-bus">To:</label>
+                <select name="to-bus">
+                    <option selected="selected">Vienna</option>
+                    <option>Prag</option>
+                    <option>İstanbul</option>
+                    <option>London</option>
+                    <option>Kiev</option>
+                </select>
+
+                <label for="depart-bus">Depart:</label>
+                <input type="date" name="depart-bus" class="date">
+
+                <label for="return-bus">Return:</label>
+                <input type="date" name="return-bus" class="date">
+
+                <label>How Many Tickets:</label>
+                <div class="btns">
+                    <button class="btn" id="decrease-bus">-</button>
+                    <h2 id="bus-tickets">1</h2>
+                    <button class="btn" id="increase-bus">+</button>
+                    <div id="bus-price" class="prices"></div>
+                </div>
+
+                <button class="complete">Complete</button>
+            </div>
+
+            <div class="tab-content">
+                <label for="from-ship">From:</label>
+                <select name="from-ship">
+                    <option>Vienna</option>
+                    <option>Prag</option>
+                    <option selected="selected">İstanbul</option>
+                    <option>London</option>
+                    <option>Kiev</option>
+                </select>
+
+                <label for="to-ship">To:</label>
+                <select name="to-ship">
+                    <option selected="selected">Vienna</option>
+                    <option>Prag</option>
+                    <option>İstanbul</option>
+                    <option>London</option>
+                    <option>Kiev</option>
+                </select>
+
+                <label for="depart-ship">Depart:</label>
+                <input type="date" name="depart-ship" class="date">
+
+                <label for="return-ship">Return:</label>
+                <input type="date" name="return-ship" class="date">
+
+                <label for="cruise-ship">Cruise Ship:</label>
+                <select name="cruise-ship">
+                    <option selected="selected">American Song</option>
+                    <option>American Jazz</option>
+                    <option>American Pride</option>
+                    <option>Queen of the West</option>
+                    <option>American Star</option>
+                </select>
+
+                <label>How Many Tickets:</label>
+                <div class="btns">
+                    <button class="btn" id="decrease-ship">-</button>
+                    <h2 id="ship-tickets">1</h2>
+                    <button class="btn" id="increase-ship">+</button>
+                    <div id="ship-price" class="prices"></div>
+                </div>
+
+                <button class="complete">Complete</button>
+            </div>
+        </div>
+    </div>    
+    <script src="../JavaScript/script.js"></script>
+</body>
+</html>

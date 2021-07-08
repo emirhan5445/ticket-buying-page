@@ -1,0 +1,112 @@
+.container {
+    margin: 0;
+    padding: 0;
+}
+.naw-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+    color: #093cb1;
+}
+.naw-list ul {
+    display: flex;
+    margin: 30px 5px 30px 0px;
+}
+.naw-list ul li {
+    padding-right: 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.naw-list ul li:hover {
+    color: black;
+}
+* {
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Bona Nova', serif;
+}
+.tab li {
+    background: #eee;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #111;
+    margin-right: 5px;
+    cursor: pointer;
+} 
+.contents {
+    margin: 0 auto;
+    padding: 15px;
+    width: 600px;
+    align-items: center;
+}
+.tab {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.tab li.aktif {
+    background: #093cb1;
+    color: #ffffff;
+}
+.tab-content {
+    padding: 10px;
+    border: 1px solid #093cb1;
+}
+.tab li:hover {
+    background: #093cb1;
+    color: #ffffff;
+}
+label {
+    display: block;
+    margin: 20px 0px 10px 10px;
+    font-size: larger;
+}
+select {
+    width: 150px;
+    margin: 10px 0px 10px 10px;
+    border-radius: 5px;
+    height: 30px;
+}
+.date {
+    margin: 10px 0px 10px 10px;
+    border-radius: 5px;
+    height: 30px;
+    border-width: 1px;
+}
+.btns {
+    display: flex;
+    justify-content: flex-start;
+}
+.btn {
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    cursor: pointer;
+    text-align: center;
+    margin: 25px 10px 10px 10px;
+}
+.btn:hover {
+    border: 2px solid #093cb1;
+}
+.complete {
+    margin: 10px;
+    background-color: #ffffff;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.prices {
+    padding: 20px;
+    font-size: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.p {
+    font-size: 1.5em;
+    padding: 10px;
+}
